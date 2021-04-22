@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Goldsmith</title>
+    <link rel="stylesheet" href="css/styles.css?version=1.1">
+</head>
+<body>
+    <div class="app">
+        
+        <div class="name-title">
+            <h1 class="blue-text">Sean Goldsmith</h1>
+            <h2>Software Developer</h2>
+        </div>
+        <div class="col">
+            <div id="top-section">
+                <div class="left">
+                    <p>
+                        Hello, my name is Sean Goldsmith. I'm a software developer living in the Portland area. 
+                    </p>
+                    <p>
+                        I love working with code because it keeps my mind engaged. I like the idea of working a job that can't be mastered. There is always more to learn, as well as ways to improve. Technology evolves quickly, and I enjoy evolving with it.
+                    </p>
+                    <p>
+                        When I'm not writing code, I enjoy playing music, riding skateboards and bikes, and watching movies. I am also quite fond of food.
+                    </p>
+                </div>
+                <div class="right">
+                    <h2 class="blue-text">Some Things About Me</h2>
+                    <div class="bio-list-container">
+                        <h4>Languages</h4>
+                        <ul>
+                            <li class="bio-list">Javascript</li>
+                            <li class="bio-list">Python</li>
+                            <li class="bio-list">C#</li>
+                        </ul>
+                    </div>
+                    <div class="bio-list-container">
+                        <h4>Frameworks/Technologies</h4>
+                        <ul>
+                            <li class="bio-list">NodeJS</li>
+                            <li class="bio-list">Djagno</li>
+                            <li class="bio-list">ASP.NET</li>
+                        </ul>
+                    </div>
+                    <div class="bio-list-container">
+                        <h4>Skills</h4>
+                        <ul>
+                            <li class="bio-list">Communication and Teamwork</li>
+                            <li class="bio-list">Critical Thinking</li>
+                            <li class="bio-list">Decisive Problem Solving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-container" id="banner">
+        <img src="img/banner.png">
+    </div>
+    <div class="app">
+        <div class="col">
+            <div id="bottom-section">
+                <h1 class="projects-header blue-text">My Projects</h1>
+                <a href="#project"></a>
+                <div class="project-card-container">
+                    <div class="project-card">
+                        <div class="img-container">
+                            <img src="img/cube.png" class="card-photo">
+                        </div>
+                        <div class="info">
+                            <h4 class="card-title">Rubiks Cube Timer</h4>
+                            <p class="card-description">A timer for speedcubing. It can record your times, generate your scrambles, and give you averages for your times! Built with html/css/javascript.</p>
+                            <button class="card-button"  onclick="showProject('cube')">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="img-container">
+                            <img src="img/mic.png" class="card-photo mic">
+                        </div>
+                        <div class="info">
+                            <h4 class="card-title">Monty Hall</h4>
+                            <p class="card-description">A project illustrating the "Monty Hall Prolem". This gives you the chance to play the game evoked in the brain teaser. See the results yourself! Built with html/css/javascript.</p>
+                            <button class="card-button" onclick="showProject('monty')">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="img-container">
+                            <img src="img/basket.png.PNG" class="card-photo">
+                        </div>
+                        <div class="info">
+                            <h4 class="card-title">Shopping List Generator</h4>
+                            <p class="card-description">An app for generating a weekly shopping list based on the recipes you intend to cook. Built with html/css/javascript for client, NodeJS and MongoDB for backend api.</p>
+                            <button class="card-button"  onclick="showProject('recipe')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="cube" class="project-detail">
+                <div class="detail-flex-container">
+                    <a href="#cube"></a>
+                    <h1 class="detail-title">Rubiks Cube Timer</h1>
+                    <p class="detail-write-up">This is an application designed to time your rubiks cube speed solves.
+                        I enjoy speedcubing and it has been a hobby of mine for about 12 years now. This timer generates a random
+                        scramble for you at the top of the screen. After applying the scramble, you hit the spacebar to begin your solve, and hit it again
+                        when you are finished. After you have complete 3,5, and 7 solves, the app will display the average of those solves.
+                        <br><br>
+                        It's important to note that in speedsolving, the fastest and slowest times are removed before calculating the average
+                        of and set 5 or higher. This is why we have a "mean" of 3 and and "average" of 5 and 7.
+                        <Br><Br>This app was built using html, css, and vanilla javascript.  This web app is designed for desktops.
+                    </p>
+                    <h4 class="project-link"><a href="https://github.com/SeanGoldsmith/cubeTimer" target="_blank">See it on Github</a></h4>
+                    <h3 class="project-link"><a href="https://cubetimer.goldsmithweb.com" target="_blank">See the Demo</a></h3>
+                    <div class="detail-photo">
+                        <img src="img/cubeTimer.png">
+                    </div>
+                    <button class="detail-button"  onclick="backToTop('cube')">Back to Top</button>
+                </div>
+            </div>
+            <div id="monty" class="project-detail">
+                <div class="detail-flex-container">
+                    <a href="#monty"></a>
+                    <h1 class="detail-title">Monty Hall</h1>
+                    <p class="detail-write-up">This is an application I built to illustrate the "Monty Hall Problem". 
+                        This is a statistics problem that most people intially find deeply unintuative. The app simulates the game and tracks
+                        your win percentage with each strategy. This experience is meant for desktops.
+                        <Br><Br>This app was built using html, css, and vanilla javascript.
+                        <br><br>The animations and font for this application where created by Mary Skidmore.
+                    </p>
+                    <h4 class="project-link"><a href="https://github.com/SeanGoldsmith/montyHallProblem" target="_blank">See it on Github</a></h4>
+                    <h3 class="project-link"><a href="https://montyhall.goldsmithweb.com" target="_blank">See the Demo</a></h3>
+                    <div class="detail-photo">
+                        <img src="img/monty.png">
+                    </div>
+                    <button class="detail-button"  onclick="backToTop('monty')">Back to Top</button>
+                </div>
+            </div>
+            <div id="recipe" class="project-detail">
+                <div class="detail-flex-container">
+                    <a href="#recipe"></a>
+                    <h1 class="detail-title">Shopping List Generator</h1>
+                    <p class="detail-write-up">This is an application I built to generate shopping lists. The idea is that you select the recipes you
+                        intend to cook for the week, and the app gives you a shopping list including all the ingredients you will need for all the 
+                        dishes. You can add recipes and add new ingredients.
+                        <Br><Br>This app was built using html, css, and vanilla javascript for the front end client. The backend api is a NodeJS/Express app, and the 
+                            database is using MongoDB.
+                    </p>
+                    <h4 class="project-link">See it on Github</h4>
+                    <h3 class="project-link"><a href="https://github.com/SeanGoldsmith/shoppingListClient" target="_blank">Front End Client</a></h3>
+                    <h3 class="project-link"><a href="https://github.com/SeanGoldsmith/shoppingListBackEnd" target="_blank">Back End Api</a></h3>
+                    <h4 class="project-link">See the Demo</h4>
+                    <h3 class="project-link"><a href="https://slclient.goldsmithweb.com" target="_blank">Front End Client</a></h3>
+                    <div class="detail-photo">
+                        <img src="img/adding.png">
+                    </div>
+                    <button class="detail-button"  onclick="backToTop('recipe')">Back to Top</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>

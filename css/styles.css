@@ -1,0 +1,275 @@
+@font-face {
+    font-family: custom;
+    src: url(../font/static/Muli-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: jose;
+    src: url(../font/static/JosefinSans-Regular.ttf);
+  }
+
+:root {
+    --off-white: #e2f3f3;
+    --blue: #006aa3;
+    --light-blue: #90e0ef;
+    --dark-blue: #061f23;
+    --pure-white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: custom;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: jose;
+}
+
+body {
+    background-color: var(--off-white);
+    color: var(--dark-blue);
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.app {
+    width: 800px;
+    margin: auto;
+}
+
+.name-title {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.col {
+    margin-top: 50px;
+}
+
+.left {
+    display: inline-block;
+    width: 48%;
+    padding-right: 40px;
+    vertical-align: top;
+}
+
+.right {
+    display: inline-block;
+    width: 48%;
+    padding-left: 40px;
+    vertical-align: top;
+}
+
+.left p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.bio-list-container {
+    padding: 20px 0px;
+}
+
+.bio-list {
+    text-decoration: none;
+    list-style: none;
+    padding: 4px 0px;
+    font-size: .9em;
+    font-weight: lighter;
+}
+
+.blue-text {
+    color: var(--blue);
+}
+
+.projects-header{ 
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.project-card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.project-card {
+    width: 225px;
+    background-color: var(--blue);
+    border-radius: 25px;
+}
+
+.img-container {
+    padding: 15px;
+}
+
+.card-photo {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+.mic {
+    width: 60%;
+}
+
+.info {
+    min-height: 400px;
+    background-color: var(--pure-white);
+    padding: 25px;
+    position: relative;
+}
+
+.card-title {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    background-color: var(--light-blue);
+    color: var(--blue);
+    width: 80%;
+    margin: 20px 0;
+    border: none;
+    height: 50px;
+    font-size: 1em;
+    transition: all .3s;
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+}
+
+.card-button:hover {
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+}
+
+.card-description {
+    font-size: 1em;
+}
+
+.banner-container {
+    width: 98vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.banner-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Project Detail Overlay */
+/*  */
+
+.project-detail {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    bottom: 10px;
+    display: none;
+}
+
+.detail-title {
+    margin-bottom: 50px;
+    color: var(--blue);
+}
+
+.detail-flex-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-write-up {
+    line-height: 1.6;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+}
+
+.detail-photo {
+    width: 80%;
+    overflow: hidden;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+.detail-photo img {
+    border: 5px solid var(--pure-white);
+    width: 100%;
+    height: auto;
+}
+
+.detail-button {
+    background-color: var(--light-blue);
+    color: var(--blue);
+    width: 80%;
+    margin: 20px 0;
+    border: none;
+    height: 50px;
+    font-size: 1em;
+    transition: all .3s;
+}
+
+.detail-button:hover {
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+}
+
+.project-link {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .app {
+      width: 100%;
+    }
+
+    .name-title {
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .left {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        display: block;
+    }
+
+    .right {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        display: block;
+    }
+
+    .left p {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .project-card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .banner-container {
+        width: 100%;
+    }
+
+  }
